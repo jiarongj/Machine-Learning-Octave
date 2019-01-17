@@ -1,0 +1,20 @@
+octave:1> t = [0:0.01:0.98];
+octave:2> y1 = sin(2*pi*4*t);
+octave:3> plot(t,y1);
+octave:4> y2 = cos(2*pi*4*t);
+octave:5> plot(t,y2);
+plot(t,y2);
+plot(t,y1);
+hold on;
+octave:9> plot(t,y2,'r')
+octave:10> xlabel('time');
+octave:11> ylabel('value');
+octave:12> legend('sin','cos');
+octave:13> title('myplot');
+octave:14> cd '/Users/jiarongj'; print -dpng 'myplot.png'
+Some output formats are not available.
+ 
+cd '/Users/jiarongj'; print -djpeg octave:15>          
+octave:15> cd '/Users/jiarongj'; print -djpeg 'myplot.jpeg'
+
+
