@@ -1,0 +1,10 @@
+octave:17> close;
+octave:18> figure(1);plot(t,y1);
+octave:19> figure(2);plot(t,y2);
+
+octave:20> subplot(1,2,1);     # create two plot frames (1x2) and currently stay on frame 1st, prepare to plot figure (t, y1)
+octave:21> plot(t,y1);
+octave:22> subplot(1,2,2);   # move to frame 2nd and prepare to plot figure (t, y2)
+octave:23> plot(t,y2);
+
+octave:24> axis([0 0.5 -1 0.8])  # axis for x setting to [0, 0.5], axis for y setting to [-1, 0.8]
