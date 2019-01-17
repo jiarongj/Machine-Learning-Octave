@@ -1,0 +1,17 @@
+octave:1> magic(5);
+octave:2> a = magic(5);
+octave:3> a
+a =
+
+   17   24    1    8   15
+   23    5    7   14   16
+    4    6   13   20   22
+   10   12   19   21    3
+   11   18   25    2    9
+
+octave:4> imagesc(a);
+octave:6> cd '/Users/jiarongj'; print -djpeg 'color_plot.jpeg';
+octave:7> imagesc(a), colorbar, colormap gray;
+octave:8> cd '/Users/jiarongj'; print -djpeg 'color_plot_gray.jpeg';
+octave:9> imagesc((magic(15))), colorbar, colormap gray;
+octave:10> cd '/Users/jiarongj'; print -djpeg 'color_gray_15.jpeg';
